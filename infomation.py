@@ -70,14 +70,16 @@ while login_count < 3 and run_flag == True:
                 break
 
 while run_flag == False:
-    show_info()
-    user_choice = int(input("请选择您的操作:"))
-    if user_choice == 1:
-        change_info()
-    elif user_choice == 2:
-        print_info()
-    elif user_choice == 3:
-        change_password()
-    else:
+    try:
+        show_info()
+        user_choice = input("请选择您的操作:")
+        if user_choice == '1':
+            change_info()
+        elif user_choice == '2':
+            print_info()
+        elif user_choice == '3':
+            pass
+        elif user_choice == 'q':
+            break
+    except ValueError:
         print("请输入正确的操作:")
-    break
