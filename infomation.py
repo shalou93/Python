@@ -14,8 +14,6 @@ def show_info():
     """
     print(info)
 
-
-
 def open_file():
     with open('E:\Desktop\Py\info.txt','r+') as f:
         data = f.read().split()
@@ -44,15 +42,15 @@ def change_info():
         else:
             print_column()
             p_data[user_action] = user_column
-            # p_data.insert(len(data),'\n')
-            p_data.append('\n')
             print(type((p_data)))
             print(data[i])
-            data[i] = ','.join(p_data)
+            if i == 0:
+                data[i] = ','.join(p_data) + '\n'
+            else:
+                data[i] = '\n' + ','.join(p_data)
             print(data)
             print(type(data))
-        # print(data[i].split())
-        with open('E:\Desktop\Py\info.txt', 'r+') as f:
+        with open('E:\Desktop\Py\info.txt', 'w+') as f:
             f.writelines(data)
         break
 
