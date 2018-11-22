@@ -36,14 +36,12 @@ def change_info():
         print("%s %s" % (x, p))
     while True:
         user_action = int(input("请输入您要修改的字段值:"))
-        # try:
         if user_action == 'q':
             print('已退出登录!')
         else:
             print_column()
             p_data[user_action] = user_column
-            print(type((p_data)))
-            print(data[i])
+
             write_info()
         break
 
