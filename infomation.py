@@ -44,15 +44,24 @@ def change_info():
             p_data[user_action] = user_column
             print(type((p_data)))
             print(data[i])
-            if i == 0:
-                data[i] = ','.join(p_data) + '\n'
-            else:
-                data[i] = '\n' + ','.join(p_data)
-            print(data)
-            print(type(data))
-        with open('E:\Desktop\Py\info.txt', 'w+') as f:
-            f.writelines(data)
+            write_info()
         break
+
+def write_info():
+    if i == 0:
+        data[i] = ','.join(p_data) + '\n'
+    else:
+        data[i] = '\n' + ','.join(p_data)
+    with open('E:\Desktop\Py\info.txt', 'w+') as f:
+        f.writelines(data)
+
+
+
+def change_passwd():
+    open_file()
+    print_column()
+    p_data[1] = user_column
+    write_info()
 
 
 while login_count < 3 and run_flag == True:
@@ -78,7 +87,7 @@ while run_flag == False:
         elif user_choice == '2':
             print_info()
         elif user_choice == '3':
-            pass
+            change_passwd()
         elif user_choice == 'q':
             break
     except ValueError:
