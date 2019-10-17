@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+# 猜数字游戏 
 
 import random
 number = random.randint(1,101)
