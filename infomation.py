@@ -1,4 +1,7 @@
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
+# 个人信息查询、修改
+
 import os
 
 login_count = 0
