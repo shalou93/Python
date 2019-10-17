@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
+# 购物车程序
 
 products = [['iphone8',6888],['MacPro',14800],['小米6',2499],['Coffee',31],['Book',80],['Nike Shoes',799]]
 shopping_cart = []
