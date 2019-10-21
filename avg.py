@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# 打印N个数的平均数
 
 count = 0
 sum = 0
