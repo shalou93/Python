@@ -9,4 +9,4 @@ for i in range(-num,num+1):
         i = -i
     else:
         i = i
-    print(" "*(num-i) + "*"*(2*(i+1)-1))
+    print(" "*(num-i) + "*"*(2*(i+1)-1))        # 只需要关注前面空格数和*号个数，找规律
