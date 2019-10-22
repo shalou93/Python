@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# 打印n阶菱形
+# 打印对顶三角形
 
 num = int(input("Please input the num: "))
 
