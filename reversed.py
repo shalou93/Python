@@ -9,4 +9,4 @@ while num > 0:
 print(reversed_num)
 
 
-print(num[::-1])
+print(str(num)[::-1])
